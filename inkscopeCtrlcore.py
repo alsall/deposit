@@ -1,4 +1,5 @@
-# Alpha Sall
+# Alpha O. Sall
+# 04/04/2014
 
 from flask import Flask, request, Response, render_template
 app = Flask(__name__)#,template_folder='/var/www/inkscope/inkscopeAdm/')
@@ -11,13 +12,10 @@ import json
 from bson.json_util import dumps
 
 
-
-
 # import mongoJuiceCore
 # import poolsCtrl
 
-# Alpha O. Sall
-# 03/24/2014
+
 
 class Pools:
     """docstring for pools"""
