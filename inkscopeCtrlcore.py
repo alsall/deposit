@@ -66,7 +66,6 @@ class Pools:
         return requests.put('http://localhost:8080/ceph-rest-api/osd/pool/create?pool='+poolname+'&pg_num='+pg_num+'&pgp_num='+pgp_num)
 
     def delete(self):
-        check = ''
         return requests.put('http://localhost:8080/ceph-rest-api/osd/pool/delete?pool='+poolname+'&sure=--yes-i-really-really-mean-it')
 
 
