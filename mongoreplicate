@@ -1,0 +1,11 @@
+close any mongod process
+export LC_ALL=C
+mongod --fork --replSet replmongo0 --dbpath /var/lib/mongodb/ --logpath /var/log/mongodb/mongod.log
+open a mongo shell 
+config = {" _id":0,"host":"hostname:port"}
+rs.initiate(config)
+#add the other members
+rs.add('member1hostname')
+rs.add('memberXhostname')
+
+            
